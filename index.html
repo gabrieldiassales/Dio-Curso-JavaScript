@@ -4,12 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="js/main.js"></script>
   <title>Curso Javascript</title>
 </head>
-<body>
-  <script>
-    alert('Hello World!');
-  </script>
+<body onload="load()">  
   <h1>Minha Página!</h1>
+  <input type="text" id="numero1">
+  <input type="text" id="numero2">
+  <button onclick="clicar()">Somar</button>
+  <p id="resultado">A soma é:</p>
+  <p onclick="redirecionar()">Redirecionar</p>
+  <p id="mouse1" onmouseover="entrar(this)" onmouseout="sair(this)">Passe o mouse aqui!</p>
+  <p id="mouse2" onmouseover="entrar(this)" onmouseout="sair(this)">Passe o mouse aqui!</p>
+  <select name="" id="" onchange="change(this)">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
 </body>
 </html>
